@@ -1,0 +1,2 @@
+(()=>{"use strict";const e=require("electron");e.contextBridge.exposeInMainWorld("api",{send:(n,...r)=>{e.ipcRenderer.send(n,...r)},listen:(n,r)=>{e.ipcRenderer.on(n,r)},stopListening:(n,r)=>{e.ipcRenderer.removeListener(n,r)}})})();
+//# sourceMappingURL=https://raw.githubusercontent.com/Plotinator/pltr_sourcemaps/main/2023.7.21/preload.map
